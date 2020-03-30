@@ -1,10 +1,16 @@
-<h1>Stupid coaching</h1>
-<p><% if @question.blank? %>
-  _
-  <% else %>
-  <%= @question %></p>
-  <% end %>
-<p>- You</p>
-<p><%= @answer %></p>
-<p>- Your coach</p>
-<%= link_to "Ask a new question", ask_path %>
+<div class="coaching-container">
+  <h1>Stupid coaching</h1>
+  <div class="chat-box">
+    <% if @question.blank? %>
+      <p>_</p>
+    <% else %>
+      <%= @question %></p>
+    <% end %>
+    <p><i>- You</i></p>
+  </div>
+  <div class="chat-box highlighted">
+    <p><strong><%= @answer %></strong> </p>
+    <p><i>- Your coach</i></p>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>

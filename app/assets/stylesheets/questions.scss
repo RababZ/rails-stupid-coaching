@@ -1,3 +1,20 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$turquoise: #17a2b8;
+
+.coaching-container {
+  width: 800px;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.chat-box {
+  border-left: solid #eeeeeeee 5px;
+  padding-left: 10px;
+  // margin-bottom: 10px;
+}
+
+.highlighted {
+  background-color: #f3bf030a;
+}
